@@ -1,0 +1,43 @@
+// Externals
+
+// Setup
+@import 'setup/variables';
+@import 'setup/functions';
+@import 'setup/mixins';
+
+// Basics
+@import 'basics/typography';
+@import 'basics/base';
+@import 'basics/helpers';
+@import 'basics/layout';
+@import 'basics/modals';
+@import 'basics/animations';
+@import 'basics/buttons';
+
+// Views
+
+// Components
+@import "cmps/ContactPreview";
+@import "cmps/AppHeader";
+@import "cmps/AppFooter";
+@import "cmps/ContactDetails";
+@import "cmps/ContactEdit";
+@import "cmps/ContactFilter";
+@import "cmps/Signup";
+@import "cmps/TransferFunds";
+@import "cmps/MoveList";
+@import "cmps/HomePage";
+
+.main-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  main {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+}

@@ -1,0 +1,115 @@
+.home-page {
+position: relative;
+color: $clr007;
+.card {
+    align-items: center;
+    background-image: linear-gradient(to top right, #141e30, #243b55);
+    border-radius: .4em;
+    box-shadow: 0 0 66px rgba(#000, 0.3);
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% , 30%);
+    width: 350px;
+    height: 400px;
+    z-index: 0;
+    
+    &:after {
+        mix-blend-mode: overlay;
+        border: 1px solid #eee;
+        border-radius: .4em;
+        content: '';
+        height: calc(100% - 2em);
+        left: 0;
+        margin: 1em;
+        position: absolute;
+        top: 0;
+        width: calc(100% - 2em);
+        z-index: 1;
+    }
+}
+
+.contact {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.move-list {
+    width: 330px;
+    border-radius: 4px;
+    margin-left: 10px;
+    ul {
+        height: 140px;
+    }
+    transform: translate(0%,0%);
+    li {
+        background-color: $clr007;
+        padding: 5px;
+        color: #000;
+        border-radius: 3px;
+        box-shadow: 0 1px 21px #0000002b;
+        .amount {
+            padding-left: 20px;
+        }
+    }
+}
+
+h1 {
+    letter-spacing: 0.05em;
+    margin: .25em 0;
+    font-size: 30px;
+}
+
+p {
+    margin: 0;
+}
+
+.up {
+    color: #42ffa8;
+}
+
+.down {
+    color: #ff0740;
+
+    &:after {
+        transform: rotate(180deg);
+    }
+
+    & + svg {
+        transform: rotate(0deg);
+    }
+}
+
+.up,
+.down {
+    align-items: center;
+    display: flex;
+    &:after{
+        border-style: solid;
+        border-width: 0 5px 5px 5px;
+        border-color: transparent transparent currentColor transparent;
+        content: "";
+        height: 0;
+        margin-left: .5em;
+        margin-top: .1em;
+        width: 0;
+    }
+}
+
+svg {
+    bottom: -50%;
+    fill: #999;
+    left: -20%;
+    mix-blend-mode: overlay;
+    position: absolute;
+    transform: scaleX(-1);
+    width: 150%;
+    z-index: -1;
+}
+}

@@ -1,0 +1,27 @@
+.app-header {
+    height: 60px;
+    padding-inline: 35px;
+    padding-block: 10px;
+    background-color: $clr001;
+    color: $clr007;
+    font-size: 18px;
+    .logo {
+        gap: 10px;
+        img {
+            height: 45px;
+        }
+    }
+    nav {
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            padding-block: 16px;
+        }
+        .active {
+            scale: 1.08;
+            border-bottom: 1px solid $clr007;
+        }
+    }
+}

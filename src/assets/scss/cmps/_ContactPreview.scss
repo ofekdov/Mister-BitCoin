@@ -1,0 +1,22 @@
+.contact-preview {
+    // background: #03a9f414;
+    background: $clr006;
+    color: $clr007;
+    box-shadow: 0 0 11px #0000002b;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+    height: 100px;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+    transition: 0.2s;
+    background-position: right;
+    .info {
+        padding: 10px;
+        flex-grow: 1;
+    }
+    &:hover {
+        scale: 1.05;
+    }
+}
